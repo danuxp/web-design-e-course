@@ -1,0 +1,57 @@
+h2 {
+  font-family: "Merriweather";
+  /*color: #322f56;*/
+}
+
+p {
+  font-family: "Montserrat";
+  /*color: #8481ab;*/
+}
+
+
+/* #### Navbar #### */
+.navbar {
+  background-color: #393FE9;
+}
+
+.navbar-nav a.nav-link {
+  font-family: "Montserrat";
+  text-transform: uppercase;
+  color: #fff !important;
+}
+
+/* #### Navbar #### */
+.container-bg {
+  background-color: #393FE9;
+}
+
+.img-head {
+	/*position: absolute;*/
+}
+
+.img-header {
+	/*position: relative;
+  top: 0;
+  right: 0;
+  left: 0;*/
+}
+
+.img-icon {
+	background-color: #393FE9
+}
+
+@media screen and (min-width: 1280px) {
+	.container-bg {
+		height: 100vh;
+	}
+
+	.icon-page {
+		margin-top: 8rem;
+	}
+}
+
+@media screen and (max-width: 576px) {
+	.img-head {
+		display: none;
+	}
+}

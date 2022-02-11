@@ -1,0 +1,127 @@
+h2 {
+  font-family: "Merriweather";
+  color: #322f56;
+}
+
+p {
+  font-family: "Montserrat";
+  color: #8481ab;
+}
+
+/* navbar */
+.navbar {
+  background-color: #393FE9;
+}
+.navbar-nav a.nav-link {
+  font-family: "Montserrat";
+  font-size: 0.9em;
+  margin-right: 1.3em;
+  text-transform: uppercase;
+  color: #fff !important;
+}
+
+.nav-line {
+  width: 1px;
+  height: 40px;
+  background-color: #282646;
+}
+
+a.btn-masuk {
+  background-color: #232235;
+  color: #8481ab !important;
+}
+
+/* ----------++---------------- */
+
+/* container */
+.container-bg {
+  background-color: #393FE9;
+  height: 100vh;
+}
+
+.img-header {
+  width: 65%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  display: block;
+  margin: 0 auto;
+}
+
+.img-head {
+  position: relative;
+}
+/* ----------++---------------- */
+
+.page-arah {
+  margin-top: 4em;
+  margin-bottom: 4em;
+  /* background-color: navy; */
+}
+
+.list {
+  list-style: none;
+}
+
+/* ----------++---------------- */
+
+/* media queri */
+@media screen and (min-width: 1200px) {
+  .nav-line {
+    display: inline-block;
+  }
+
+  .navbar-nav {
+    align-items: center;
+  }
+
+  .btn-head {
+    display: none;
+  }
+
+  .company {
+    margin-top: 8em;
+  }
+
+  .card {
+    width: 20rem;
+  }
+
+  .bwa-cocok {
+    margin-top: 8em;
+  }
+
+  .tools {
+    margin-top: 5em;
+  }
+}
+
+@media screen and (max-width: 567px) {
+  .container-bg {
+    height: auto;
+  }
+  .head-text > h1,
+  p {
+    text-align: left;
+  }
+
+  .head-text > h1 {
+    font-size: 2em;
+    line-height: 1.5em;
+  }
+
+  .img-head {
+    display: none;
+  }
+
+  .page-arah {
+    margin-top: 4em;
+    margin-bottom: 2em;
+  }
+
+  .card {
+    width: 100%;
+    margin-bottom: 1em;
+  }
+}
