@@ -1,6 +1,7 @@
 h2 {
   font-family: "Merriweather";
-  color: #322f56;
+  /* color: #322f56; */
+  color: #393fe9;
 }
 
 p {
@@ -10,7 +11,7 @@ p {
 
 /* navbar */
 .navbar {
-  background-color: #393FE9;
+  background-color: #393fe9;
 }
 .navbar-nav a.nav-link {
   font-family: "Montserrat";
@@ -35,7 +36,7 @@ a.btn-masuk {
 
 /* container */
 .container-bg {
-  background-color: #393FE9;
+  background-color: #393fe9;
   height: 100vh;
 }
 

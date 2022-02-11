@@ -24,6 +24,8 @@
 
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
+    <link rel="stylesheet" href="assets/imgHover/imagehover.min.css">
+
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -55,11 +57,9 @@
           >
             <div class="navbar-nav">
               <a class="nav-link" aria-current="page" href="#">Home</a>
-              <a class="nav-link" href="#">About</a>
-              <a class="nav-link" href="#">Education</a>
-              <a class="nav-link" href="#">Skill</a>
-              <a class="nav-link" href="#">Gallery</a>
-              <a class="nav-link" href="#">Contact</a>              
+              <a class="nav-link" data-scroll href="#about" >About</a>
+              <a class="nav-link" data-scroll href="#kelas">Kelas</a>
+              <a class="nav-link" data-scroll href="#review">Review</a>            
             </div>
           </div>
         </div>
@@ -77,22 +77,13 @@
             agar apa yang kamu impikan dapat termujud 
           </p>
 
-          <div class="btn-head">
-            <button class="btn text-uppercase btn-primary mr-2">
-              uji coba gratis
-            </button>
-
-            <button
-              class="btn text-uppercase"
-              style="background-color: #232235; color: #8481ab"
-            >
-              lihat kelas
-            </button>
-          </div>
-
           <div class="img-head mt-5">
+            <!-- 
+              https://buildwithangga.com/images/pic_header_new.png 
+            https://buildwithangga.com/themes/front/images/alur-belajar-menjadi-designer-dan-developer-buildwithangga.png
+            -->
             <img
-              src="https://buildwithangga.com/images/pic_header_new.png"
+              src="img/img-header.png"
               alt="img-header"
               class="img-header"
               data-aos="zoom-in"
@@ -104,7 +95,7 @@
     </div>
 
     <!-- ============Pembatas===================== -->
-    <section class="company">
+    <section class="company" id="about">
       <div class="container">
         <div class="row">
           <div
@@ -112,15 +103,15 @@
             data-aos="fade-up"
             data-aos-delay="350"
           >
-            <p class="col-sm text-center pt-5">
+            <p class="col-sm text-center pt-3">
               Member kami dari berbagai <strong>kampus</strong> dan
               <strong>perusahaan</strong> terkenal
             </p>
-            <img
+            <!-- <img
               src="https://buildwithangga.com/images/members-campus-companies.png"
               alt="member"
               class="w-75"
-            />
+            /> -->
           </div>
         </div>
       </div>
@@ -144,7 +135,7 @@
           </div>
           <div class="col-md-6" data-aos="fade-up" data-aos-delay="600">
             <img
-              src="https://buildwithangga.com/themes/front/images/alur-belajar-menjadi-designer-dan-developer-buildwithangga.png"
+              src="img/img-arahkan.png"
               alt="img-arahkan"
               class="w-75 mx-auto d-block col-sm pt-5"
             />
@@ -157,7 +148,7 @@
     <!-- ============Pembatas===================== -->
 
     <section>
-      <div class="container">
+      <div class="container" id="kelas">
         <div class="row">
           <div class="col-md-12 text-center mb-4" data-aos="fade-up">
             <h2 class="mt-5">Kelas Populer</h2>
@@ -181,21 +172,7 @@
                 <p class="card-text">All Levels</p>
                 <hr />
                 <span>
-                  <img
-                    src="https://buildwithangga.com/themes/front/images/ic-sertifikat.png"
-                    alt="sertifikat"
-                    width="20"
-                  />
-                  <strong>Sertifikat</strong>
-                </span>
-
-                <span class="float-right">
-                  <img
-                    src="https://buildwithangga.com/themes/front/images/ic-konsultasi.png"
-                    alt="sertifikat"
-                    width="30"
-                  />
-                  <span> <strong>Konsultasi</strong> </span>
+                  <strong>Sertifikat, Ilmu, Konsultasi</strong>
                 </span>
                 <hr />
                 <div class="user d-flex">
@@ -224,21 +201,7 @@
                 <p class="card-text">All Levels</p>
                 <hr />
                 <span>
-                  <img
-                    src="https://buildwithangga.com/themes/front/images/ic-sertifikat.png"
-                    alt="sertifikat"
-                    width="20"
-                  />
-                  <strong>Sertifikat</strong>
-                </span>
-
-                <span class="float-right">
-                  <img
-                    src="https://buildwithangga.com/themes/front/images/ic-konsultasi.png"
-                    alt="sertifikat"
-                    width="30"
-                  />
-                  <span> <strong>Konsultasi</strong> </span>
+                  <strong>Sertifikat, Ilmu, Konsultasi</strong>
                 </span>
                 <hr />
                 <div class="user d-flex">
@@ -267,21 +230,7 @@
                 <p class="card-text">All Levels</p>
                 <hr />
                 <span>
-                  <img
-                    src="https://buildwithangga.com/themes/front/images/ic-sertifikat.png"
-                    alt="sertifikat"
-                    width="20"
-                  />
-                  <strong>Sertifikat</strong>
-                </span>
-
-                <span class="float-right">
-                  <img
-                    src="https://buildwithangga.com/themes/front/images/ic-konsultasi.png"
-                    alt="sertifikat"
-                    width="30"
-                  />
-                  <span> <strong>Konsultasi</strong> </span>
+                  <strong>Sertifikat, Ilmu, Konsultasi</strong>
                 </span>
                 <hr />
                 <div class="user d-flex">
@@ -296,6 +245,10 @@
               </div>
             </div>
           </div>
+
+          <!-- <div class="align-middle">
+            <button class="btn btn-primary text-uppercase mt-3 align-middle">Lihat Kelas</button>
+          </div> -->
         </div>
       </div>
     </section>
@@ -307,7 +260,7 @@
         <div class="row d-flex align-items-center">
           <div class="col-md-6 col-sm mt-4" data-aos="fade-up">
             <h2 class="col-sm lh-base">
-              Kenapa BWA <br />
+              Kenapa Pamungkas Code <br />
               Cocok Untukmu
             </h2>
             <p>
@@ -396,11 +349,6 @@
                 <p>Seumur Hidup</p>
               </div>
               <div class="col-md-4 col-6" data-aos="fade-up">
-                <img
-                  src="https://buildwithangga.com/themes/front/images/ic-offline.png"
-                  alt=""
-                  width="30"
-                />
                 <h5 class="mt-3"><strong>Offline</strong></h5>
                 <p>Dapat diunduh</p>
               </div>
@@ -413,15 +361,13 @@
 
     <!-- ============Pembatas===================== -->
     <section class="google-review pb-5">
-      <div class="container">
+      <div class="container" id="review">
         <div class="row">
           <div class="col-12">
             <div class="text-center pt-4 pb-3" data-aos="fade-up">
-              <img
-                src="https://buildwithangga.com/themes/front/images/logo-google-review-buildwithangga.png"
-                alt="google review"
-                width="200"
-              />
+              <h2 class="col-sm lh-base">
+                Apa Kata Mereka
+              </h2>
             </div>
           </div>
         </div>
@@ -508,13 +454,13 @@
               Jadi Lebih Optimal
             </h2>
             <p>
-              BuildWith Angga menggunakan tools yang sering <br />
+              Pamungkas Code menggunakan tools yang sering <br />
               digunakan oleh perusahaan besar IT di dunia
             </p>
           </div>
           <div class="col-md-6" data-aos="fade-left">
             <img
-              src="https://buildwithangga.com/themes/front/images/ill_tools.png"
+              src="img/tools.png"
               alt="tools"
               class="w-75 mx-auto d-block"
             />
@@ -539,11 +485,6 @@
         <div class="row">
           <div class="col-md-4 col-sm mx-auto d-block" data-aos="fade-down">
             <div class="text-center py-4" >
-              <img
-                src="https://buildwithangga.com/themes/front/images/tata-cara-bwa-1.png"
-                class="card-img-top w-50"
-                alt=""
-              />
               <div class="card-body">
                 <h5 class="card-title">Memulai</h5>
                 <p class="card-text text-center">
@@ -555,11 +496,6 @@
 
           <div class="col-md-4 col-sm mx-auto d-block" data-aos="fade-down">
             <div class="text-center py-4">
-              <img
-                src="https://buildwithangga.com/themes/front/images/tata-cara-bwa-2.png"
-                class="card-img-top w-50"
-                alt=""
-              />
               <div class="card-body">
                 <h5 class="card-title">Mempelajari</h5>
                 <p class="card-text text-center">
@@ -572,7 +508,7 @@
           <div class="col-md-4 col-sm mx-auto d-block" data-aos="fade-down">
             <div
               class="text-center rounded-lg py-4"
-              style=" background-color: #322f56"
+              style=" background-color: #393fe9"
             >
               <img
                 src="https://buildwithangga.com/themes/front/images/tata-cara-bwa-3.png"
@@ -586,7 +522,7 @@
                 </p>
                 <button
                   class="btn text-uppercase text-white mt-4"
-                  style="background-color: #3f3c67"
+                  style="background-color: #4b50f1"
                 >
                   mulai belajar
                 </button>
@@ -628,8 +564,12 @@
     ></script>
     <script src="script.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="assets/smoothScroll/smooth-scroll.polyfills.js"></script>
+    <script src="assets/aos/aos.js"></script>
+</body>
     <script>
       AOS.init();
+       var  scroll  =  new  SmoothScroll ( 'a[href*="#"]' ) ; 
     </script>
   </body>
 </html>
